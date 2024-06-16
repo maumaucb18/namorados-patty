@@ -1,20 +1,23 @@
 html {
   box-sizing: border-box;
+  
+  
 }
 
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  
 }
 
 .container {
-  height: 100vh;
+  height: 90vh;
   width: 100vh;
   margin: 0 auto;
   text-align: center;
   visibility: hidden;
   position: relative;
-  overflow: hidden;
+ overflow: hidden;
 }
 
 .container div.six {
@@ -134,6 +137,7 @@ body {
   display: inline-block;
   position: absolute;
   width: 200px;
+  
 }
 
 .baloons img:nth-child(even) {
@@ -234,16 +238,14 @@ body {
 }
 audio{
  
-    display: flex;
+ display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 10px; /* Distância do topo */
+    position: relative;
+    top: 10px; //Distância do topo 
     width: 30%;
     left: 35%;
-  
-
-}
+} 
 
 /* Media Queries */
 @media screen and (max-height: 1000px) {
@@ -270,13 +272,25 @@ audio{
   }
 }
 
-@media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
+@media screen and (max-width: 667px) {
+
+  
+  
+  .container { 
+    top: 1px; 
+    height: 92vh;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    position: relative;
+   overflow: hidden;
+   background-color:red ;
+    
   }
 
   .four .text-box {
-    width: 90%;
+    width: 70%;
   }
 
   .text-box .fake-btn {
@@ -289,16 +303,19 @@ audio{
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 7rem;
   }
 
   .six .hat {
     width: 50px;
     top: -20px;
   }
+ .six{bottom: 20px;
+
+ }
 
   .wish-hbd {
-    font-size: 2.3em;
+    font-size: 1.3em;
   }
 
   .wish h5 {
@@ -309,4 +326,16 @@ audio{
     font-size: 1.5rem;
     font-weight: lighter;
   }
+
+  audio{
+ 
+    display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       top: 10px; //Distância do topo 
+       width: 20%;
+       left: 25%;
+       visibility: hidden;
+   } 
 }
